@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript</title>
+    <script>
+        function myFunction01() {
+            document.getElementsByTagName("h2")[0].innerHTML = "Document Object Model";
+        }
+
+        function myFunction02() {
+            document.getElementById("logo").src = "images/html_logo.png";
+        }
+
+        function myFunction03() {
+            document.getElementsByTagName("h2")[0].setAttribute("class", "judul");
+            document.getElementById("logo").setAttribute("width", 200);
+            document.getElementById("logo").setAttribute("height", 200);
+        }
+
+        function myFunction04() {
+            document.getElementsByClassName("judul")[0].style.color = "red";
+        }
+    </script>
+</head>
+<body>
+    <h2>Hypertext Markup Language</h2>
+    <img id="imgLogo" src="images/html_logo.png" alt="gambar" style="width:200px;height:200px;border:0;">
+    <button id="btn01" type="button" onclick="myFunction01()">Ubah inner HTML</button>
+    <button id="bt0n2" type="button" onclick="myFunction02()">Ubah nilai atribut image</button>
+    <button id="b0tn3" type="button" onclick="myFunction03()">Set nilai atribut baru</button>
+    <button id="0btn4" type="button" onclick="myFunction04()">Ubah style elemen</button>
+</body>
+</html>
